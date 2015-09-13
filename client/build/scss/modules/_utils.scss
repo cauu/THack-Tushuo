@@ -1,0 +1,89 @@
+.iu-split-line {
+    @extend %iu-border;
+    width: 100%;
+    height: 0.05rem;
+    margin: 0.2rem 0rem 0.2rem 0rem;
+}
+
+.iu-split-line-thin {
+    border: 0;
+    border-bottom: $width-split-line-thin solid $grey; 
+    width: 100%;
+    margin: 0.1rem 0rem 0.1rem 0rem;
+}
+
+.iu-split-line-thick {
+    border: 0;
+    border-bottom: $width-split-line-thick solid $color-primary; 
+    width: 100%;
+    margin: 0.2rem 0rem 0.2rem 0rem;
+}
+
+.time-label {
+    height: 1rem;
+    font-size: 0.5rem;
+    margin-top: 0.8rem;
+    color: #7f7f7f;
+}
+
+.iu-split-line-tiny{
+    border: 0;
+    border-bottom: 0.1rem solid #000; 
+    width: 100%;
+    margin: 0.4rem 0rem 0.4rem 0rem;
+}
+
+.iu-progress-bar {
+    width: 10.65rem;
+    border:0;
+    margin: 0.2rem;
+    padding:0 0 0 0;
+    .label-container {
+        width: 100%;
+        height: 1rem;
+        margin-bottom: 0.1rem;
+    }
+    .label-agree {
+        width: 2rem;
+        height: 1rem;
+        float: left;
+        //background-image: url("../../img/agree.png") ; 
+        background-color: $color-primary;
+        background-repeat: no-repeat;
+        color: #000;
+        padding-top: 0.2rem;
+        line-height: 0.5rem;
+        font-size: 0.5rem;
+        background-size: cover;
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+    .label-disagree {
+        border-radius: 0.5rem;
+        padding-top: 0.2rem;
+        line-height: 0.5rem;
+        text-align: center;
+        width: 2rem;
+        font-size: 0.5rem;
+        height: 1rem;
+        float:right;
+        background-color: #000;
+        //background-image: url("../../img/disagree.png"); 
+        background-repeat: no-repeat;
+        color: $color-primary;
+        background-size: cover;
+        background-position: center center;
+    }
+    .agree {
+        border: 0;
+        width: 100%;
+        border-bottom: 0.2rem solid $color-primary;
+        float: left;
+    }
+    .disagree {
+        float: right;
+        width: 0;
+        border: 0;
+        border-bottom: 0.2rem solid #000;
+    }
+}

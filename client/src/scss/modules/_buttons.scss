@@ -1,0 +1,129 @@
+.iu-btn-long {
+    @extend %iu-button;
+    @extend .iu-font-btn;
+    width: $width-button-long; //14.5rem
+}
+
+.iu-btn-short {
+    @extend %iu-button;
+    @extend .iu-font-btn;
+    width: $width-button-short; //7.25rem or 5.75rem 
+}
+
+.iu-btn-extend {
+    @extend %iu-button;
+    @extend .iu-font-btn;
+    text-decoration: none;
+    color: $darkgray;
+    width: 100%;
+}
+
+.iu-btn-extend-bg {
+    @extend %iu-button-bg;
+    @extend .iu-font-btn;
+    width: 100%;
+    color: #000;
+}
+
+.iu-btn-extend-agree {
+    @extend %iu-button;
+    @extend .iu-font-btn;
+    text-decoration: none;
+    color: $darkgray;
+    width: 100%;
+    background-color: $white;
+}
+
+.iu-btn-extend-disagree {
+    @extend %iu-button;
+    @extend .iu-font-btn;
+    text-decoration: none;
+    color: $darkgray;
+    width: 100%;
+    background-color: $white;
+}
+
+.iu-btn-long-bg {
+    @extend %iu-button-bg;
+    @extend .iu-font-btn;
+    width: $width-button-long;
+    color: $white;
+}
+
+.iu-btn-short-bg {
+    @extend %iu-button-bg;
+    @extend .iu-font-btn;
+    width: $width-button-short;
+    color: $white;
+}
+
+.iu-btn-close {
+    @extend %button; //extend foundation button
+    margin-left: 0.5rem;
+    float: left;
+    padding: 0 0 0 0;
+    background-color: transparent;
+    color: #000;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 100;
+    &:active {
+        color: #fff;
+        text-decoration: none;
+    }
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.iu-btn-like {
+    @extend %iu-button-img-small;
+    background-image: url("../../img/like.png");
+}
+
+.iu-btn-liked {
+    @extend %iu-button-img-small;
+    background-image: url("../../img/liked.png");
+}
+
+.iu-btn-profile-big {
+    @extend %iu-button-img-big;
+    //background-color: $color-primary;
+    text-align: center;
+    padding-top: $height-button-img-big/3;
+    border-radius: 4rem;
+    margin:0 0 0 0;
+    background-position:center center;
+}
+
+.iu-btn-profile-middle {
+    @extend %iu-button-img-middle;
+//    background-color: $color-primary;
+    text-align: center;
+    padding-top: $height-button-img-big/3;
+    border-radius: 2rem;
+    margin:0 0 0 0;
+    background-position:center center;
+}
+
+.iu-btn-radio-uncheck {
+    @extend %iu-button;
+    @extend .iu-font-text-small;
+    color: $color-primary;
+    margin: 0 0 0 0;
+    width: 4.1rem;
+    line-height: $height-button-primary;
+    padding: 0 0 0 0;
+}
+
+.iu-btn-radio-checked {
+    @extend %iu-button;
+    @extend .iu-font-text-small;
+    color: $white;
+    background-color: $color-primary;
+    margin: 0 0 0 0;
+    width: 4.1rem;
+    line-height: $height-button-primary;
+    padding:0 0 0 0;
+}

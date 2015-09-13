@@ -1,0 +1,19 @@
+{
+  "name": "iutravel",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^1.4.2",
+    "body-parser": "latest",
+    "bower": "latest",
+    "express": "latest",
+    "js-base64": "^2.1.9",
+    "md5": "^2.0.0",
+    "method-override": "latest",
+    "mongoose": "latest",
+    "oauth2-server": "^2.4.1",
+    "qiniu": "^6.1.8"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}

@@ -1,0 +1,57 @@
+<div class="iu-bottom-container" hm-tap="onToggle" ng-show="isInit" hm-manager-options='{"stopPropagation": true}'>
+<!--<div class="iu-bottom-left"><a class="iu-button-short" hm-tap="onAgree" hm-manager-options='{"stopPropagation":true, "preventGhosts":true}'>赞同</a></div>-->
+    <div class="iu-bottom-main" transclude>
+        <div class="iu-item-container">
+            <div class="iu-item-left" style="background-image:url('{{markerInfo._image[0]._preurl}}')">
+            </div>
+            <div class="iu-item-right">
+                <div class="main">
+                    <br/>
+                    <div class="iu-font-text-large iu-left">
+                        {{markerInfo.e_title}}
+                    </div>
+                    <div style="clear:both"></div>
+                    <div class="iu-progress-bar">
+                        <div class="label-container">
+                            <div class="label-agree">
+                                {{agreeRate}}%赞同
+                            </div>
+                            <div class="label-disagree">
+                                {{disagreeRate}}%反对
+                            </div>
+                        </div>
+                        <div class="agree" style="width: {{agreeWidth}}%"></div>
+                        <div class="disagree" style="width:{{disagreeWidth}}%"></div>
+                        <div style="clear:both"></div>
+                        <div class="time-label" style="margin-top: 0.1rem;color: #000; height: 0.5rem">
+                            总共{{markerInfo.e_agree + markerInfo.e_disagree}}人参与
+                        </div>
+                        <div class="time-label" style="margin-top: 0.3rem">
+                            创建于{{markerInfo._createtime}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="iu-clear"></div>
+
+    <div class="iu-split-line-thin" style="margin-top:0.75rem;margin-bottom:1rem"></div>
+    <div class="iu-bottom-extra iu-font-text-small">
+        {{markerInfo.e_description}}
+    </div>
+    <ul class="iu-list-carousel" rn-carousel rn-carousel-bufferd>
+        <li class="iu-bottom-extra-image" ng-repeat="img in markerInfo._image">
+            <div style="background-size:contain;background-repeat:no-repeat;width:17.25rem;height:9rem;background-image:url('{{img._url}}')"></div>
+        </li>
+    </ul>
+    <div class="iu-bottom-footer" style="background-color:#fff">
+        <div class="iu-split-line-thin" style="margin-top:0.75rem;margin-bottom:1rem"></div>
+        <div class="left">
+            <a class="iu-btn-extend-agree" hm-tap="onAgree">赞同</a>
+        </div>
+        <div class="right">
+            <a class="iu-btn-extend-disagree" hm-tap="onDisagree">不赞同</a>
+        </div>
+    </div>
+</div>

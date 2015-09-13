@@ -1,0 +1,26 @@
+.iu-list-plan {
+    @extend %iu-list;
+    //height: 7.3rem; //TODO: $height-list-tall; 
+    height: $height-list-tall;
+    li {
+        margin-top: 2rem; //$margin of the plans
+    }
+}
+
+.iu-list-ordinary {
+    @extend %iu-list;
+    //height: 2.5rem; //TODO: $height-list-short;
+    height: $height-list-short;
+}
+
+.iu-list-carousel {
+    @extend %iu-list;
+    height: 9rem;
+    margin-left: 3rem;
+}
+
+.iu-list-info {
+    @extend %iu-list;
+    height: $height-list-middle;
+}
+

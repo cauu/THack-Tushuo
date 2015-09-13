@@ -1,0 +1,290 @@
+.iu-clear {
+    clear: both;
+}
+
+.iu-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $height-header;
+    z-index: $layer-forth;
+    text-align: center;
+    background-color: $color-primary;
+}
+
+.iu-header-left {
+    height: 100%;
+}
+
+.iu-header-right {
+    margin-left: 2rem;
+    height: 100%;
+}
+
+.iu-container {
+    width: 100%;
+    height: 100%;
+}
+
+//iu-map
+.iu-map-container {
+    width: 100%;
+    height: 100%;
+}
+//url跳转时的view
+.iu-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    //z-index: $layer-forth;
+    z-index: 999;
+}
+
+.iu-view-container {
+    height: $height-screen;  //TODO: $height-screen
+    width: 100%;
+    z-index: $layer-third;
+    padding: 0 0 0 0;
+    overflow: scroll;
+    background-color: $white;
+}
+
+.iu-view-header {
+    @extend %iu-border;
+    width: 100%;
+    height: $height-header; //TODO:2.2rem;
+    line-height: $height-header; //$height-header
+    text-align: center;
+    margin-bottom: $height-header;
+    background-color: $color-primary;
+}
+
+//侧边栏的布局
+.iu-menu-container {
+    position: relative;
+    height: $height-screen; //33.35rem 
+    width:  66.7%;
+    background-color: rgba(0,0,0,0.2); //TODO: $color-transparent 
+    filter: Alpha(opacity=0); //TODO: 不同内核做自适应 
+    z-index: $layer-third;
+    margin-top: $height-header;
+}
+
+.iu-menu-content {
+    height: 100%;
+    width: 100%;
+    background-color: $white ; //TODO: $white:#fff 
+    text-align: center;
+}
+
+.iu-menu-header {
+    margin: auto;
+    text-align: center;
+    margin-bottom: $height-list-short; 
+}
+
+.iu-menu-shade {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 35%;
+    background: transparent;
+    background-color: $white;
+    opacity: 0;
+}
+
+//底部panel的布局
+.iu-bottom-container {
+    position: fixed;
+    //bottom: -53%; //$margin-bottom;
+    bottom: -14.3rem;
+    right: 0;
+    background-color: $white;
+    height: 30.15rem;
+    width: 100%;
+    z-index: $layer-second;
+}
+.iu-bottom-left {
+    float: left;
+    width: 8%;
+    height: 5rem;
+    margin: auto;
+    padding-top: 1rem;
+    text-align: center;
+}
+.iu-bottom-right {
+    float: right;
+    width: 8%;
+    height: 5rem;
+    margin: auto;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.iu-bottom-main {
+    float: left;
+    width: 16.6rem;
+    height: 5rem;
+    margin-left: 0.75rem;
+}
+
+.iu-bottom-footer {
+    width: 18.75rem;
+    height: 2.9rem;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    bottom: 1.3rem;
+    z-index: 200;
+    .left {
+        float:left;
+        margin:0 0 0 0;
+        width: 50%; 
+    }
+    .right {
+        float:left;
+        margin:0 0 0 0;
+        width: 50%; 
+    }
+}
+
+.iu-bottom-loading {
+    position: relative;
+    left: 85%;
+    top: -24%;
+}
+
+.iu-bottom-extra {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    height: 10.2rem;
+    width: 17.25rem;
+    word-break: break-word;
+}
+
+.iu-bottom-extra-image {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    height: 9rem;
+    width: 17.25rem;
+    word-break: break-word;
+}
+
+
+//carousel-item的布局
+.iu-item-container {
+    width: 100%;
+    height: 100%;
+}
+
+.iu-item-left {
+    float: left;
+    width: 5rem;
+    height: 5rem;
+    padding-top: 0.5rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0.5rem;
+}
+
+.iu-item-left-up {
+    margin-bottom: 0;
+}
+.iu-item-left-down {
+    word-break: break-word;
+    width: $width-button-img-middle;
+    padding-top: 0;
+    line-height: 100%;
+}
+
+.iu-item-right {
+    float: left;
+    width: 10.8rem;
+    height: 5rem;
+    margin-left: 0.75rem;
+    .main {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        white-space:nowrap;
+    }
+    .extra {
+        width: 100%;
+        //height: 40%;
+    }
+}
+
+.iu-item-footer {
+    width: 100%;
+    height: 33.3%;
+}
+
+.iu-item-hasfooter {
+    height: 66.7%;
+}
+//用户信息panel
+.iu-info-item-container {
+    width: 95%;
+    height: 100%;
+}
+.iu-info-item-left {
+    //@extend %iu-border;
+    float: left;
+    height: 100%;
+    width: 20%;
+    margin: auto;
+}
+
+.iu-info-item-center {
+    //@extend %iu-border;
+    padding-top: $height-list-middle * 0.2;
+    float: left;
+    width: 55%;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+} 
+
+.iu-info-item-right {
+    //@extend %iu-border;
+    padding-top: $height-list-middle * 0.2;
+    float:right;
+    width: 20%;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+}
+
+.ac-success-panel {
+    position: fixed;
+    background-color:#fff;
+    top: 9.1rem;
+    left: 2.5rem;
+    width: 13.25rem;
+    height: 9.9rem;
+}
+
+.ac-success-smile {
+    margin-top:1rem;
+    margin-left: 5.1rem;
+    height: 3rem;
+    width: 3rem;
+    background-image: url('../../img/success.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ac-success-text {
+    margin-top:0.65rem;
+    text-align:center;
+    width: 100%;
+    height: 3.1rem;
+}
+
+.ac-success-footer {
+    width: 100%;
+}

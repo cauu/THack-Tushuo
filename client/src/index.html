@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" ng-app="anti.cheat">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>途说</title>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/app.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="iu-view" ui-view></div>
+
+    <div class="iu-container" ng-controller="aMapController">
+        <iu-search-box has-logged-in=true></iu-search-box>
+
+        <a-map map-plugins="mapPlugins" map-options="mapOptions"></a-map>
+
+        <info-panel is-init="infoIsInit" marker-info="currMarkerInfo"></info-panel>
+
+        <div class="ac-toggle" hm-tap="onExtraToggle" style="toggleStyle"></div>
+        <div class="ac-online" ng-animate="'animate'" ng-if="showExtra"></div>
+        <div class="ac-geo" ng-animate="'animate'" ng-if="showExtra" hm-tap="onLocateTap"></div>
+        <div class="ac-refresh" ng-animate="'animate'" ng-if="showExtra" hm-tap="onRefreshTap"></div>
+    </div>
+
+    <script src="./js/foundation.js"></script>
+    <script src="./js/templates.js"></script>
+    <script src="./js/routes.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

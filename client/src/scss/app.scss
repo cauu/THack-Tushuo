@@ -1,0 +1,108 @@
+@import "foundation";
+@import "slick";
+@import "slick-theme";
+
+@import "vendor/angular-carousel";
+
+@import "base/_variables";
+@import "base/_functions";
+@import "base/_mixins";
+@import "base/_placeholders";
+
+@import "framework/_grid";
+@import "framework/_layout";
+
+@import "modules/_font";
+@import "modules/_buttons";
+@import "modules/_input";
+@import "modules/_list";
+@import "modules/_label";
+@import "modules/_utils";
+
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+//override max-width property of foundation img
+img {
+    max-width: 18.75rem;
+}
+
+.amap-copyright{
+    width: 0;
+    height: 0
+}
+
+.amap-geo {
+    width: 0;
+    height: 0;
+}
+
+.ac-geo {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../img/btn-my-location.png');
+    width: 2.65rem;
+    height: 2.65rem;
+    position: fixed;
+    right: 1.75rem;
+    bottom: 7.4rem;
+}
+
+.ac-refresh{
+    position: fixed;
+    bottom: 11.3rem;
+    right: 1.75rem;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../img/btn-refresh.png');
+    width: 2.65rem;
+    height: 2.65rem;
+    //background-color: $color-primary;
+}
+
+.ac-online{
+    position: fixed;
+    bottom: 15.45rem;
+    right: 1.75rem;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../img/btn-online.png');
+    width: 2.65rem;
+    height: 2.65rem;
+    //background-color: $color-primary;
+}
+
+.ac-toggle {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../img/btn-toggle.png');
+    width: 2.65rem;
+    height: 2.65rem;
+    position: fixed;
+    right: 1.75rem;
+    bottom: 3.5rem;
+}
+
+.animate-enter, .animate-leave {
+    transition: 500ms ease-in all;
+    //position: relative;
+    //display: block;
+} 
+.animate-enter.animate-enter-active, .animate-leave {
+    left: 0;
+}
+.animate-leave.animate-leave-active, .animate-enter {
+    left: 500px;
+}

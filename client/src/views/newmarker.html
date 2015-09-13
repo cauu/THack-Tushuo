@@ -1,0 +1,44 @@
+---
+name: newmarker
+url: /newmarker
+controller: MarkerController
+animationIn: slideInDown
+animationOut: slideOutUp
+---
+<div class="iu-view-container input-group">
+    <div class="iu-view-header">
+        <a class="iu-btn-close" hm-tap="close">x</a>
+        <span class="iu-font-btn" style="margin-left:0;color:#000">
+            发布途说
+        </span>
+    </div>
+    <ul class="iu-list-ordinary">
+        <li>
+            <label class="btn iu-btn-radio-uncheck ng-class:{ 'iu-btn-radio-checked': eventName=='money'}" ng-model="eventName" btn-radio="'money'">金钱诈骗</label>
+            <label class="btn iu-btn-radio-uncheck ng-class:{ 'iu-btn-radio-checked': eventName=='safety'}" ng-model="eventName" btn-radio="'safety'">人身安全</label>
+            <label class="btn iu-btn-radio-uncheck ng-class:{ 'iu-btn-radio-checked': eventName=='quality'}" ng-model="eventName" btn-radio="'quality'">质量问题</label>
+            <label class="btn iu-btn-radio-uncheck ng-class:{ 'iu-btn-radio-checked': eventName=='others'}" ng-model="eventName" btn-radio="'others'">其他危险</label>
+        </li>
+        <li>
+            <input ng-model="eventTitle" class="ac-input-long" placeholder="输入你即将发布的事件名称"></input>
+        </li>
+        <li>
+            <textarea ng-model="eventDescription" class="ac-textarea" placeholder="具体描述" hm-tap="onTextAreaTap" style="{{textAreaStyle}}"></textarea>
+            <div class="ac-img-uploader">
+                <span>添加</span> 
+                <a>+</a>
+            </div>
+        </li>
+        <li>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>
+            <br/>
+            <a class="iu-btn-extend-bg iu-nomargin ac-margin-top-little" hm-tap="publish">提交</a>
+        </li>
+    </ul>
+</div>

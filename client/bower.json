@@ -1,0 +1,30 @@
+{
+  "name": "anti.cheat",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "angular": "~1.3.17",
+    "angular-route": "~1.3.17",
+    "angular-cookies": "~1.3.17",
+    "jquery": "latest",
+    "angular-mocks": "~1.3.17",
+    "foundation-apps": "~1.1.0",
+    "angular-slick-carousel": "~3.0.9",
+    "ryanmullins-angular-hammer": "~2.1.10",
+    "oclazyload": "~1.0.4",
+    "angular-touch": "~1.3.0",
+    "angular-carousel": "0.3.2",
+    "angular-md5": "~0.1.8",
+    "angular-base64": "~2.0.5",
+    "angular-bootstrap": "~0.13.3",
+    "plupload": "~2.1.8",
+    "qiniu": "~1.0.8-beta"
+  },
+  "resolutions": {
+    "angular": "~1.3.17",
+    "angular-touch": "~1.3.0"
+  }
+}

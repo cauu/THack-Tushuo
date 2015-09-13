@@ -1,0 +1,135 @@
+.iu-input-short {
+    @extend %iu-input;
+    @extend .iu-font-input;
+    width: $width-input-short; //$width-input-short 
+}
+
+.iu-input-long {
+    @extend %iu-input;
+    @extend .iu-font-input;
+    width: $width-input-long; //$width-input-long
+}
+
+.ac-input-long {
+    @extend %iu-input;
+    @extend .ac-font-input;
+    border: 0;
+    border-bottom: $width-border solid #e5e5e5;
+    width: 17.25rem;
+    height: 1.4rem;
+    margin-top: 1rem;
+}
+
+.ac-textarea {
+    @extend .iu-font-text-small;
+    height: $height-input-primary;
+    line-height: 0.8rem;
+    margin-top: 1rem;
+    width: 17.25rem;
+    border: 0;
+    border-bottom: $width-border solid #e5e5e5;
+    margin-left: 0.65rem;
+    padding: 0 0 0 0;
+    padding-top: 1.4rem;
+}
+
+.iu-input-extend {
+    @extend %iu-input;
+    @extend .iu-font-input;
+    width: 100%;
+}
+
+.iu-textarea {
+    @extend .iu-font-input;
+    margin: auto;
+    height: $height-textarea;
+    width: $width-button-long;
+}
+
+.iu-searchbox {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    float: left;
+    .btn-question {
+        @extend %iu-button-img-middle;
+        margin-right: 0.5rem;
+        float: right;
+        height: $height-button-primary;
+        width: $width-button-long * 0.1;
+        padding: 0 0 0 0;
+        border: 0;
+        background-position: center center;
+        background-image: url('../../img/btn_question.png');
+        background-repeat: no-repeat;
+    }
+    .btn-sidemenu {
+        //@extend %iu-button-img-middle;
+        margin-left: 0.5rem;
+        margin-top: 0.2rem;
+        float: left;
+        //background-color: $grey;
+        height: $height-button-primary;
+        width: $width-button-long * 0.1;
+        margin-right: $width-button-long * 0.05; 
+        padding: 0 0 0 0;
+        border: 0;
+        background-position: center center;
+        background-color: transparent;
+    }
+    input {
+        @extend .iu-font-input;
+        margin-top: 0.2rem;
+        float: left;
+        height: $height-input-primary * 0.8; 
+        width: $width-button-long * 0.9 ;
+        border: 0;
+        background-color: $white;
+    }
+}
+
+.iu-datepicker {
+    height: 100%;
+    width: $width-button-long;
+    margin: auto;
+    input {
+        @extend .iu-font-input;
+        height: $height-input-primary; 
+        width: $width-button-long * 0.7;
+    }
+    a {
+        @extend %iu-button-bg;
+        @extend .iu-font-btn-bg;
+        height: $height-button-primary;
+        width: $width-button-long * 0.3;
+        margin-right: 0;
+    }
+}
+
+.ac-img-uploader {
+    margin-left: 0.65rem;
+    width: 17.25rem;
+    span {
+        @extend .iu-font-text-small;
+        float: left;
+        margin-top: 0.8rem;
+    }
+    a {
+        @extend %button;
+        padding: 0 0 0 0;
+        background-color: transparent;
+        float: right;
+        font-size: 1.8rem;
+        font-weight: 100;
+        text-decoration: none;
+        color: #000;
+        &:active {
+            color: #000;
+            text-decoration: none;
+        }
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
